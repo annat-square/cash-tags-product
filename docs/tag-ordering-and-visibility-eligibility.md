@@ -1,4 +1,4 @@
-# Tag Ordering Eligibility — Requirements Definition
+# Tag Ordering and Visibility Eligibility — Requirements Definition
 
 > **Source:** [#proj-mint Slack thread](https://sq-block.slack.com/archives/C08QQ6KQ8PJ/p1772661234050569) (March 4–5, 2026)
 > **Living doc:** [Google Doc version](https://docs.google.com/document/d/1LQ5AWPfWYwY44Ju_v6LbTytmhBe2xI71rReTCp_vOb0/edit)
@@ -13,6 +13,21 @@ This document defines the eligibility checks for the Tag ordering flow, organize
 1. **True Eligibility Checks** — Fail the flow entirely
 2. **Visibility Checks** — Hide Tags from ineligible customers
 3. **Visible But Not Orderable** — Show in Grid/PDP but block ordering
+
+---
+
+## Product Context: Why Visibility Matters
+
+Tags are not just another payment device — they're a **cultural product**. The visibility and eligibility strategy is intentionally designed to support a broader product and growth vision:
+
+### Driving Demand & Virality
+Tags follow a **drop culture** model. We *want* customers to see Tags even when they can't order them — whether the device is sold out, coming soon, or the customer isn't yet eligible. Showing Tags in these states creates **pent-up demand** and **virality**: customers talk about what they've seen, share it, and come back when inventory drops or they become eligible. The scarcity and anticipation are features, not bugs.
+
+### Card Acquisition Funnel
+A key reason for the **"visible but not orderable"** pattern is to **incentivize non-cardholders to order a Cash App Card**. When a customer without a card sees a Tag in the Grid or on a PDP, they encounter a clear signal: *get a card, unlock this*. Tags become a carrot that drives card adoption — one of our most important growth levers.
+
+### TL;DR for Engineers
+When implementing visibility logic, keep in mind: **showing a Tag that can't be ordered is intentional, not a bug.** The three-tier eligibility model (eligible → visible but blocked → hidden) exists to serve distinct product goals. Only hide Tags when there's a hard reason to (U13, no inventory). Otherwise, let them be seen.
 
 ---
 
@@ -62,9 +77,15 @@ The `selectable_payment_devices` parameter in the CDL plasma flow was originally
 
 Customer can **see** the Tag in Grid and PDP but **cannot** complete an order.
 
+This is the most strategically important tier of the eligibility model. These are cases where we **deliberately** show Tags to customers who can't yet order them. The reasons:
+
+- **Non-cardholders seeing Tags → card acquisition.** A customer without a Cash App Card who sees a Tag in the Grid hits a clear call-to-action: order a card first. Tags act as a compelling incentive to drive card adoption.
+- **Sold out / coming soon states → demand and virality.** When a Tag SKU is out of stock or hasn't dropped yet, we still want it visible. This mirrors drop culture — scarcity and anticipation drive word-of-mouth, social sharing, and repeat visits. "Coming soon" and "sold out" are signals that build hype, not dead ends.
+- **The general principle:** if a customer can't order but there's no compliance or safety reason to hide the Tag, **show it**. Visibility drives engagement even when ordering is blocked.
+
 | # | Check | Description |
 |---|-------|-------------|
-| 1 | Customer does NOT have an active card | Grid + Wand PDP should still be visible for non-cardholders |
+| 1 | Customer does NOT have an active card | Grid + Wand PDP should still be visible for non-cardholders — drives card acquisition |
 
 **Figma reference:** [Mint SoT — Non-cardholder state](https://www.figma.com/design/v6KFI34uHF76z9ScnzvwMP/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%94%A5-Mint-->-SoT?node-id=12375-320914&t=z2BEGLVKSaoQhAAa-4)
 
