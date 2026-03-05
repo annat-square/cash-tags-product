@@ -11,6 +11,7 @@ Tags are physical NFC-enabled payment devices (wands, mini cards, etc.) that cus
 | Document | Description |
 |----------|-------------|
 | [Tag Ordering and Visibility Eligibility](docs/tag-ordering-and-visibility-eligibility.md) | Eligibility, visibility, and orderability requirements for the Tag ordering flow |
+| [Cashtags Vision](docs/cashtags-vision.md) | Long-term product vision, strategic direction, and strategy session agenda for Thomas & Hans |
 
 ## Key Links
 
