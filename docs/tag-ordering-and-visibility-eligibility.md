@@ -10,9 +10,9 @@
 
 This document defines the eligibility checks for the Tag ordering flow, organized into three categories:
 
-1. **True Eligibility Checks** — Fail the flow entirely
-2. **Visibility Checks** — Hide Tags from ineligible customers
-3. **Visible But Not Orderable** — Show in Grid/PDP but block ordering
+1. **True Eligibility Checks** — Fail the flow entirely - either before entering or at end of order flow
+2. **Visibility Checks** — Hide Tags in UI (Grid/PDP) from ineligible customers
+3. **Visible But Not Orderable** — Show in UI (Grid/PDP) but block ordering
 
 ---
 
