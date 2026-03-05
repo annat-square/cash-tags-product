@@ -10,7 +10,7 @@ Tags are physical NFC-enabled payment devices (wands, mini cards, etc.) that cus
 
 | Document | Description |
 |----------|-------------|
-| [Tag Ordering Eligibility](docs/tag-ordering-eligibility.md) | Eligibility, visibility, and orderability requirements for the Tag ordering flow |
+| [Tag Ordering and Visibility Eligibility](docs/tag-ordering-and-visibility-eligibility.md) | Eligibility, visibility, and orderability requirements for the Tag ordering flow |
 
 ## Key Links
 
