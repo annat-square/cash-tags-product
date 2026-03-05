@@ -65,7 +65,6 @@ These checks prevent the customer from even **seeing** Tags in the Grid.
 | # | Check | Description |
 |---|-------|-------------|
 | 1 | U13 customers | Tags should NOT be visible in Grid for U13 |
-| 2 | Taply inventory availability | Taply controls this by not returning inventory to Whimsicard |
 
 ### Design Note
 
@@ -86,6 +85,7 @@ This is the most strategically important tier of the eligibility model. These ar
 | # | Check | Description |
 |---|-------|-------------|
 | 1 | Customer does NOT have an active card | Grid + Wand PDP should still be visible for non-cardholders — drives card acquisition |
+| 2 | Taply inventory unavailable (out of stock) | Tag SKU is sold out — still visible in Grid/PDP with a "sold out" or "coming soon" state. Taply controls inventory; when stock is depleted, the Tag should remain visible but not orderable. This drives demand and mirrors drop culture. |
 
 **Figma reference:** [Mint SoT — Non-cardholder state](https://www.figma.com/design/v6KFI34uHF76z9ScnzvwMP/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%94%A5-Mint-->-SoT?node-id=12375-320914&t=z2BEGLVKSaoQhAAa-4)
 
