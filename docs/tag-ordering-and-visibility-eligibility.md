@@ -16,21 +16,6 @@ This document defines the eligibility checks for the Tag ordering flow, organize
 
 ---
 
-## Product Context: Why Visibility Matters
-
-Tags are not just another payment device — they're a **cultural product**. The visibility and eligibility strategy is intentionally designed to support a broader product and growth vision:
-
-### Driving Demand & Virality
-Tags follow a **drop culture** model. We *want* customers to see Tags even when they can't order them — whether the device is sold out, coming soon, or the customer isn't yet eligible. Showing Tags in these states creates **pent-up demand** and **virality**: customers talk about what they've seen, share it, and come back when inventory drops or they become eligible. The scarcity and anticipation are features, not bugs.
-
-### Card Acquisition Funnel
-A key reason for the **"visible but not orderable"** pattern is to **incentivize non-cardholders to order a Cash App Card**. When a customer without a card sees a Tag in the Grid or on a PDP, they encounter a clear signal: *get a card, unlock this*. Tags become a carrot that drives card adoption — one of our most important growth levers.
-
-### TL;DR for Engineers
-When implementing visibility logic, keep in mind: **showing a Tag that can't be ordered is intentional, not a bug.** The three-tier eligibility model (eligible → visible but blocked → hidden) exists to serve distinct product goals. Only hide Tags when there's a hard reason to (U13, no inventory). Otherwise, let them be seen.
-
----
-
 ## 1. True Eligibility Checks (Fail the Flow)
 
 These checks block the customer from completing a Tag order entirely. All existing card ordering eligibility checks apply, plus Tag-specific additions.
@@ -59,6 +44,21 @@ These checks block the customer from completing a Tag order entirely. All existi
 ---
 
 ## 2. Visibility Checks (Hide Tags from Ineligible Customers)
+
+### Product Context: Why Visibility Matters
+
+Tags are not just another payment device — they're a **cultural product**. The visibility and eligibility strategy is intentionally designed to support a broader product and growth vision:
+
+#### Driving Demand & Virality
+Tags follow a **drop culture** model. We *want* customers to see Tags even when they can't order them — whether the device is sold out, coming soon, or the customer isn't yet eligible. Showing Tags in these states creates **pent-up demand** and **virality**: customers talk about what they've seen, share it, and come back when inventory drops or they become eligible. The scarcity and anticipation are features, not bugs.
+
+#### Card Acquisition Funnel
+A key reason for the **"visible but not orderable"** pattern is to **incentivize non-cardholders to order a Cash App Card**. When a customer without a card sees a Tag in the Grid or on a PDP, they encounter a clear signal: *get a card, unlock this*. Tags become a carrot that drives card adoption — one of our most important growth levers.
+
+#### TL;DR for Engineers
+When implementing visibility logic, keep in mind: **showing a Tag that can't be ordered is intentional, not a bug.** The three-tier eligibility model (eligible → visible but blocked → hidden) exists to serve distinct product goals. Only hide Tags when there's a hard reason to (U13, no inventory). Otherwise, let them be seen.
+
+### Checks
 
 These checks prevent the customer from even **seeing** Tags in the Grid.
 
