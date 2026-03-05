@@ -51,7 +51,7 @@ These checks block the customer from completing a Tag order entirely. All existi
 |---|-------|-------------|
 | 6 | No U13 customers | Also enforced at grid level (see Visibility Checks) |
 | 7 | Customer must have an active card | Required to **order**, not to **see** (see Visible But Not Orderable) |
-| 8 | Active sponsorship required | If sponsored account, sponsorship must be active (no pending sponsorships) |
+| 8 | Active sponsorship required | If sponsored account, sponsorship must be active (no pending sponsorships). ⚡ **Differs from Cash App Card:** teens with a pending sponsorship *can* order a card, but **cannot** order a Tag. This is intentional — Tag ordering requires a fully active sponsorship. |
 | 9 | 1 Tag order per SKU per account | May–July launch window limit. E.g., a customer can order 1 first edition wand AND 1 first edition mini card, but NOT 2 of the same SKU |
 
 > ⚠️ **Open:** Still ironing out with FinOps whether there will be any limitation on Stack or Prepaid/Debit Flex beyond the per-SKU limit. *(Owner: Anna)*
