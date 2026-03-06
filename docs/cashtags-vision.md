@@ -227,6 +227,24 @@ These are the big questions to drive the in-person strategy session:
 
 ---
 
+## Most Important Agenda Topics for Thomas
+
+These are the four alignment points that will unblock everything else. If we only get through these, the session is a success.
+
+### 1. North Star for Distribution
+We need Thomas aligned on the long-term distribution vision — are Tags a Cash App–only product, a retail product, or both? This decision is **upstream of the entire hardware roadmap.** If we're going retail at scale, that drives chip cost targets, packaging, form factor durability, and manufacturing partner selection. We can't make those bets without a clear north star from Thomas on where Tags live in the world.
+
+### 2. Near-Term Partnership & Audience Strategy
+We need to decide whether our near-term 3P and audience strategy is **breadth or depth** — do we cast a wide net across partner categories and demographics, or do we go deep on a specific wedge? Specifically: **do we want to double down on younger audiences to start?** That has massive implications for which partners we pursue, how we market, and what compliance paths we prioritize (e.g., U13 accessibility). Thomas needs to weigh in on this before we can lock a Fall Releases pipeline.
+
+### 3. Payment Modeling Strategy
+The gift card balance route (Option A or B) is the highest-leverage unlock for Tags, but it's also the most eng-intensive. **If we want to ship it, we need to start paving that road now.** This isn't a decision we can defer — the eng resourcing, compliance work with Sutton/Bancorp, and architecture decisions all have long lead times. We need Thomas to greenlight (or kill) this path so we can plan accordingly.
+
+### 4. Feature Set Prioritization Process
+This one is less about *what* gets prioritized and more about *how* we approach prioritization going forward. Do Hans and I have the autonomy to own the feature roadmap and make prioritization calls ourselves, or does Thomas want to be in the loop on every trade-off? Getting clarity on decision rights now will prevent bottlenecks later and let us move faster post-session.
+
+---
+
 ## Contributors
 
 - Anna Thompson ([@annat](https://sq-block.slack.com/team/annat)) — Product, In-App Experience
