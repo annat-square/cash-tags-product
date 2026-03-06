@@ -102,7 +102,7 @@ This is the most strategically important tier of the eligibility model. These ar
 | 2 | Does the PDP CSI contract support the "visible but not orderable" state for non-cardholders? | John | 🔴 Open |
 | 3 | Should the eligibility check inside the Taply ordering sub-flow use the same policy as the parent flow? | TBD | 🔴 Open |
 | 4 | New eligibility policy vs. reuse existing card ordering policy? | Team | 🟡 Leaning new (see below) |
-| 5 | Add customer experience context for each "visible but not orderable" check — what does the customer see in Grid/PDP when they can't order? (e.g., sold out state, no-card CTA, coming soon treatment) | Anna | 🔴 Open |
+| 5 | Add customer experience context for each "visible but not orderable" check — what does the customer see in Grid/PDP when they can't order? (e.g., sold out state, no-card CTA, coming soon treatment) | Anna | ✅ Done |
 
 ---
 
