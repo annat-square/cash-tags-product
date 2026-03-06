@@ -85,7 +85,8 @@ This is the most strategically important tier of the eligibility model. These ar
 | # | Check | Description |
 |---|-------|-------------|
 | 1 | Customer does NOT have an active card | Grid + Wand PDP should still be visible for non-cardholders — drives card acquisition |
-| 2 | Taply inventory unavailable (out of stock) | Tag SKU is sold out — still visible in Grid/PDP with a "sold out" or "coming soon" state. Taply controls inventory; when stock is depleted, the Tag should remain visible but not orderable. This drives demand and mirrors drop culture. |
+| 2 | Taply inventory unavailable (out of stock) | Tag SKU, card SKU, or Edition Card is marked out of stock in the Grid. We want this still to be visible so customers can see the products that have been sold before; mirrors e-comm experiences. Ideally, customers could have the option to get notified for the next drop from this screen in the future. |
+| 3 | Taply inventory unavailable (coming soon) | Before a Tag SKU, card SKU, or Edition Card is launched, we show a preview of the form factor in the Grid. Customer should see something is coming, but should not be able to order it. Builds hype and intrigue. |
 
 **Figma reference:** [Mint SoT — Non-cardholder state](https://www.figma.com/design/v6KFI34uHF76z9ScnzvwMP/%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%94%A5-Mint-->-SoT?node-id=12375-320914&t=z2BEGLVKSaoQhAAa-4)
 
