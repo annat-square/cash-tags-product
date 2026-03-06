@@ -1,5 +1,7 @@
 # Edition Cards
 
+> ⚠️ **DRAFT — NOT YET REVIEWED.** This document is a working draft and has not been formally reviewed or approved. Content may be incomplete or subject to change.
+
 > **Status:** Draft — for review  
 > **Author:** Anna Thompson ([@annat](https://sq-block.slack.com/team/annat))  
 > **Source doc:** [Customization Domain Exploration](https://docs.google.com/document/d/1j2-zgo6heu-xwx-mK8SsHIiZ2WegpSk_MJnu76Hhm4s/edit)  
