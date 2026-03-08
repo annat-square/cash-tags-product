@@ -84,10 +84,9 @@ Edition Cards follow the same availability state model as Tags. It's not require
 
 | # | Question | Owner | Status |
 |---|----------|-------|--------|
-| 1 | Different pricing for Edition Cards vs. base card theme? | TBD | 🔴 Open |
+| 1 | Different pricing for Edition Cards vs. base card theme? | Anna | Answer = yes |
 | 2 | Which identity model approach (A vs B) for Edition Cards? | Server Eng | 🔴 Open |
-| 3 | Will Edition Cards support cashtag + skin or drawing + skin customization in the future? (Out of scope for Spring Release) | Anna / John Kang | 🔴 Open — raised by johnkang 2/19 |
-| 4 | Can card theme PDPs be descoped for launch? (Edition Card + Tag PDPs are staffed; regular card theme PDPs require additional backend work) | Server Eng / Product | 🟡 Under discussion — raised by rlo 2/9 |
+| 3 | Will Edition Cards support cashtag + skin or drawing + skin customization in the future? (Out of scope for Spring Release) | Anna / John Kang | Not in near term |
 
 ---
 
