@@ -21,6 +21,7 @@ Project Mint encapsulates all critical functionality for Tags, in addition to a 
 
 - P0s, critical functionality for Tags: 5/14
 - P1s, non-critical functionality for Tags: Fast follows, exact timing TBD; pull in as many P1s to 5/14 as we can
+- GTM strategy: 3 limited quantity drops, Wand Drop (5/14), Mini Card Drop (6/x), Heart Drop (. Evergreen GA (unlimited quantity, Tag-first ordering; no active card required to order Tag) in August.
 
 ## Leads
 
