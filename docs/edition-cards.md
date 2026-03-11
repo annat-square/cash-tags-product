@@ -55,6 +55,7 @@ Edition Cards serve several product goals:
 | 8 | Reportable | We can report on Edition Card orders specifically (e.g., how many RuPaul cards ordered) as well as by underlying theme (e.g., all pink cards, including RuPaul). RuPaul cards count as pink cards (mostly so we can manage hardware inventory operationally), but other pink cards do not count as RuPaul cards. |
 | 9 | Removable / sell-out logic | Edition Cards can be removed from the customer experience (sold out, retired, etc.). When removed, they should not appear in re-order scenarios. This applies at all levels: SKUs, Skins, and Edition Cards should all have filtering logic for re-orders. A customer must select a new card type when they re-order (e.g. we will not auto-reissue the design upon expiry) |
 | 10 | Pricing is independent of underlying card theme | Edition Cards can be priced independently of the underlying card theme. For example, the RuPaul card could be offered at $5 while the Pink Card could be offered for free |
+| 11 | Edition Cards can have their own bespoke offers. For example, if I order the RuPaul Card, I can receive a RuPaul specific offer to spend with my card. That offer is not available for any other card (e.g. the blank Pink Card would not have this offer) |
 
 ### Availability States
 
