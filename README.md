@@ -1,4 +1,4 @@
-# Cash Tags & Project Mint — Product Resources
+# Cash Tags & Project Mint — ReadMe
 
 Product documentation and requirements for Physical Cash Tags (Tags) and Project Mint.
 
