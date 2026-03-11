@@ -3,6 +3,8 @@
 > **Source:** [#proj-mint Slack thread](https://sq-block.slack.com/archives/C08QQ6KQ8PJ/p1772661234050569) (March 4–5, 2026)
 > **Living doc:** [Google Doc version](https://docs.google.com/document/d/1LQ5AWPfWYwY44Ju_v6LbTytmhBe2xI71rReTCp_vOb0/edit)
 > **Last updated:** 2026-03-05
+>
+> This document contains requirements for ordering and visibility eligibility for our May launch, when we require customers to have an active Cash App Card to order a Tag. At Evergreen GA, this requirement will change, meaning that we will have to reassess these ordering and eligibility rules.
 
 ---
 
