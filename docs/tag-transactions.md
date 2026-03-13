@@ -27,53 +27,6 @@ These are Tag-specific transaction decline scenarios requiring net-new or update
 
 ---
 
-## Full Notification Inventory
-
-### Summary by Status
-
-| Status | Count |
-|---|---|
-| Needs Tag update | ~35 |
-| Needs decision | ~14 |
-| No change needed / N/A for Tag | ~17 |
-| Done | 1 |
-
-### Volume Tiers
-
-| Tier | Categories |
-|---|---|
-| 🔴 **Very High** | Transaction Decline (card disabled, not activated, invalid PIN, card terminated, SEV mode) |
-| 🟠 **High** | Card Lock/Unlock, Offers / Insights (spending insights, boosts) |
-| 🟡 **Medium** | Card Lifecycle (expiry, stolen, damaged, compromised, suspended), Card Order |
-| 🟢 **Low** | Disputes, BNPL / Afterpay, Families / Teen, Other |
-
-### Categories in Scope
-
-- **Transaction Decline** — highest priority; many reference "card" directly
-- **Card Lock/Unlock** — Tag-specific variants needed (`CASHCARDLOCKED`, `CASHCARDUNLOCKED`)
-- **Card Lifecycle** (expiry, damage, stolen, compromise) — need "Your Tag will not work until you activate your new card" callouts
-- **Offers / Insights** — make generic or add Tag variant (spending insights, boosts)
-- **Families / Teen** — ADD Tag alongside card mentions (`TEENBANKINGSPONSORAPPROVEDV2`, `TEENINVESTINGSPONSORAPPROVED`)
-- **Dispute** — some require Tag impact callouts (`CASHCARDDISPUTEREORDERCARD`, `DISPUTELOSTABUSEVIRALSCAM`)
-- **BNPL / Afterpay** — pending eligibility decision for Tags
-
-### Out of Scope
-
-- **Card Order notifications** — Tags ship separately via a different flow (`PHYSICALCARDSHIPPED`, `PHYSICALCARDUNACTIVATED`, etc.)
-- **OCT declines** — Tags don't receive OCTs (`TRANSACTIONOCTDECLINEDINACTIVEPHYSICALCARD`)
-- **Dispute-specific remediation emails** with no Tag surface (`DISPUTECUSTOMREMEDIATIONEMAIL`, `DISPUTEREMEDIATIONEMAILARCADE`, `INCORRECTCASELOSTREMEDIATION_V1`)
-
-### Open Decisions Needed
-
-| Campaign | Question |
-|---|---|
-| `PHYSICALCARDREPORTEDEXPIRINGV2` / `CARDEXPIRATIONPHASEONE` | Does card expiry affect Tag? If yes, add Tag impact copy |
-| `PHYSICALCARDDECLINEINVALIDPIN` | Use generic copy or Tag-specific variant? |
-| `BNPLCARDGAINEDELIGIBILITY` (and related) | Are Tags eligible for APCAC? If not, no change needed |
-| `GIFTCARDRECEIVEDCARDCUSTOMER` | Can gift cards be used via Tag? |
-
----
-
 ## Figma
 
 Lori to add P0 notifications into Figma under a new **"Transaction Notifications"** section. Each notification should include the **condition** field to help viewers understand when Tag-specific variants are triggered.
